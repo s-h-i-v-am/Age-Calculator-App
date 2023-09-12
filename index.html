@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="inputs">
+            <div>
+                <h5>DAY</h5>
+                <input type="text" placeholder="DD" class="day" onkeyup="DayValidate()">
+                <h6 class="error-msg"></h6>
+            </div>
+            <div>
+                <h5>MONTH</h5>
+                <input type="text" placeholder="MM" class="month" onkeyup="MonthValidate()">
+                <h6 class="error-msg">This field is required</h6>
+            </div>
+            <div>
+                <h5>year</h5>
+                <input type="text" placeholder="YYYY" class="year" onkeyup="YearValidate()">
+                <h6 class="error-msg">This field is required</h6>
+            </div>
+        </div>
+
+        <div class="divider">
+            <div class="line"></div>
+            <img src="icon-arrow.svg" alt="">
+        </div>
+
+        <div class="results">
+            <h1><span id="years">--</span> years</h1>
+            <h1><span id="months">--</span> months</h1>
+            <h1><span id="days">--</span> days</h1>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
